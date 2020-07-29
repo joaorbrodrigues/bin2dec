@@ -95,8 +95,17 @@ html {
   text-align: center;
   align-self: center;
   justify-self: center;
+  transition: all 0.2s;
 }
 
-.btn:focus {
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn:focus,
+.btn:active {
   outline: 0;
+  transform: translateY(-1px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
