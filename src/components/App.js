@@ -57,44 +57,54 @@ const App = () => {
   const onSwitchOperation = () => {
     operation === 'bin2dec' ? setOperation('dec2bin') : setOperation('bin2dec')
     setResult('')
+    setBinary('')
+    setDecimal('')
   }
 
   return (
     <>
       {operation === 'bin2dec' ? (
-        <>
-          <div>
-            <p>Welcome to</p>
-            <h1>Bin2Dec</h1>
+        <div className="container">
+          <div className="header">
+            <p className="header__welcome">Welcome to</p>
+            <h1 className="header__app-name">Bin2Dec</h1>
           </div>
-          <div>
-            <p>Enter binary value to get the decimal</p>
+          <div className="form">
+            <p className="form__text">Enter binary value to get the decimal</p>
 
-            <input value={binary} onChange={onBinaryChange} />
-            <div>{result}</div>
+            <input
+              className="form__input"
+              value={binary}
+              onChange={onBinaryChange}
+            />
+            <div className="form__result">{result}</div>
 
-            <button onClick={onSwitchOperation}>
-              Switch to Dec2Bin &rarr;
+            <button className="btn" onClick={onSwitchOperation}>
+              Switch to Dec2Bin &nbsp; &rarr;
             </button>
           </div>
-        </>
+        </div>
       ) : (
-        <>
-          <div>
-            <p>Welcome to</p>
-            <h1>Dec2Bin</h1>
+        <div className="container">
+          <div className="header">
+            <p className="header__welcome">Welcome to</p>
+            <h1 className="header__app-name">Dec2Bin</h1>
           </div>
-          <div>
-            <p>Enter decimal value to get the binary</p>
+          <div className="form">
+            <p className="form__text">Enter decimal value to get the binary</p>
 
-            <input value={decimal} onChange={onDecimalChange} />
-            <div>{result}</div>
+            <input
+              className="form__input"
+              value={decimal}
+              onChange={onDecimalChange}
+            />
+            <div className="form__result">{result}</div>
 
-            <button onClick={onSwitchOperation}>
-              &larr; Switch to Bin2Dec
+            <button className="btn" onClick={onSwitchOperation}>
+              &larr; &nbsp; Switch to Bin2Dec
             </button>
           </div>
-        </>
+        </div>
       )}
     </>
   )

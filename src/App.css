@@ -1,0 +1,102 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 31.2rem 1fr;
+  font-family: 'Nunito', sans-serif;
+  color: #22215b;
+  margin-top: 10rem;
+}
+
+.header {
+  line-height: 1;
+  grid-column: 2 / 3;
+}
+
+.header__welcome {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+}
+
+.header__app-name {
+  font-size: 3.8rem;
+  margin-bottom: 5.5rem;
+  font-weight: 800;
+}
+
+.form {
+  grid-column: 2 / 3;
+  grid-row: 2/3;
+
+  display: grid;
+  grid-template-rows: repeat(2, min-content) minmax(5.1rem, min-content);
+}
+
+.form__text {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  font-weight: 300;
+  align-self: center;
+  justify-self: center;
+}
+
+.form__input {
+  border: 1px solid #eef2fe;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  padding: 1rem 3rem;
+  width: 31.2rem;
+  height: 5rem;
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: #1b1d28;
+  font-weight: 800;
+  font-family: inherit;
+  align-self: center;
+  justify-self: center;
+}
+
+.form__input:focus {
+  outline: none;
+}
+
+.form__result {
+  margin-bottom: 1.7rem;
+  letter-spacing: 0.1rem;
+  font-size: 2.5rem;
+  color: #1b1d28;
+  font-weight: 800;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn {
+  width: 21.5rem;
+  height: 5.2rem;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  background-color: #567df4;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+.btn:focus {
+  outline: 0;
+}
