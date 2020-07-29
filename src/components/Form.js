@@ -62,6 +62,8 @@ const Header = () => {
         <>
           <p className="form__text">Enter binary value to get the decimal</p>
           <input
+            type="tel"
+            pattern="^-?[0-9]\d*\.?\d*$"
             className="form__input"
             value={binary}
             onChange={onBinaryChange}
@@ -73,6 +75,8 @@ const Header = () => {
 
           <input
             className="form__input"
+            type="tel"
+            pattern="^-?[0-9]\d*\.?\d*$"
             value={decimal}
             onChange={onDecimalChange}
           />
