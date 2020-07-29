@@ -45,6 +45,7 @@ const Header = () => {
         .repeat(iterations)
         .split('')
         .map((n) => +n)
+
       while (dec > 0) {
         dec = dec - Math.pow(2, currentBit)
         bitArray[currentBit] = 1
