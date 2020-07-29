@@ -55,7 +55,7 @@ html {
   border: 1px solid #eef2fe;
   border-radius: 10px;
   font-size: 2.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   width: 31.2rem;
   height: 5rem;
   margin-bottom: 1.7rem;
@@ -96,6 +96,7 @@ html {
   align-self: center;
   justify-self: center;
   transition: all 0.2s;
+  font-family: inherit;
 }
 
 .btn:hover {
